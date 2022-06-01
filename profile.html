@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/assets/calculator.ico" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="/assets/calculator.ico"
+              alt="calculator icon"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-mid"
+            />
+            Calculator
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Mode
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="standard_calculator.html"
+                      >Standard</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="programmer_calculator.html"
+                      >Programmer</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a
+              class="navbar-nav nav-link me-right"
+              aria-current="page"
+              href="index.html"
+              >Sign out</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row p-2">
+        <div class="col-2 border border-2 overflow-auto">Mode</div>
+        <div class="col-2 border border-2 overflow-auto">Base</div>
+        <div class="col-6 border border-2 overflow-auto">Equation</div>
+        <div class="col-2 border border-2 overflow-auto">Result</div>
+
+        <div class="col-2 border border-2 overflow-auto">Standard</div>
+        <div class="col-2 border border-2 overflow-auto">10</div>
+        <div class="col-6 border border-2 overflow-auto">3000+4000</div>
+        <div class="col-2 border border-2 overflow-auto">7000</div>
+
+        <div class="col-2 border border-2 overflow-auto">Programmer</div>
+        <div class="col-2 border border-2 overflow-auto">2</div>
+        <div class="col-6 border border-2 overflow-auto">1001+1010</div>
+        <div class="col-2 border border-2 overflow-auto">10011</div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-primary shadow-none"
+        onclick="this.blur();"
+      >
+        <h3>Clear history</h3>
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
